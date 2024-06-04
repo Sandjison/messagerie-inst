@@ -27,7 +27,7 @@ switch ($source) {
                 setcookie('id', $user['id'], time() + (86400 * 30), '/');
             }
 
-            header("Location: ../pages/discussion.php");
+            header("Location: ../pages/discussions.php");
             exit();
         }
         break;
@@ -59,7 +59,7 @@ switch ($source) {
             foreach ($users as $user) {
                 setcookie("id", $user["id"], time() + (86400 * 30), "/");
             }
-            header('Location: ../pages/discussion.php');
+            header('Location: ../pages/discussions.php');
         }
 
         break;
